@@ -1,0 +1,51 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      screens: {        
+        '4xl': '1900px',
+        'xl1800': '1800px',
+        '3xl': '1700px',        
+        'xl1550': '1550px',
+        'xl1500': '1500px',
+        'xl1400': '1400px',
+        'xl': '1280px',
+        'xl1200': '1200px',
+        'xl1100': '1100px',
+        'lg': '1024px',
+        'sm930': '930px',
+        'sm850': '850px',
+        'md': '768px',
+        'sm750': '750px',
+        'sm670': '670px',
+        'sm': '640px',
+        'sm620': '620px',
+        'sm590': '590px',
+        'sm550': '550px',
+        'sm500': '500px',
+        'sm480': '480px',
+        'xs': '460px',
+        'xs420': '420px',
+        'xs410': '410px',
+        'xxs': '390px',
+        'xs360': '360px',
+        'xs340': '340px',
+        'xxxs': '320px',
+        'xs300': '300px',
+        'xs270': '270px',
+        'xs260': '260px',
+        'xs248': '248px',
+        'xs240': '240px'
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
+};

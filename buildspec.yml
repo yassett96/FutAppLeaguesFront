@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing dependencies...
+      - cd ligasfutapp
+      - npm install
+  build:
+    commands:
+      - echo Building the project...
+      - npm run build
+  post_build:
+    commands:
+      - echo Creating index.html for redirection in the root of the 'out' directory...
+      - echo '<meta http-equiv="refresh" content="0; url=/home/index.html">' > out/index.html
+      - echo Syncing with S3...
+      - aws s3 sync ./out s3://ligasfutapp.com --delete
+      - echo Invalidating CloudFront cache...
+      - aws cloudfront create-invalidation --distribution-id EXOVKG1D2AUXG --paths "/*"
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: ligasfutapp/out

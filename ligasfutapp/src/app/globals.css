@@ -1,0 +1,793 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+/* Ocultar flechas de scroll (solo para navegadores basados en WebKit como Chrome) */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+} */
+body {
+  background-color: #faf9f6 !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.width-3_5perc {
+  width: 3.5%;
+}
+
+.width-15perc {
+  width: 15%;
+}
+
+.width-18perc {
+  width: 18%;
+}
+
+.width-20perc {
+  width: 20%;
+}
+
+.width-22perc {
+  width: 22%;
+}
+
+.width-25perc {
+  width: 25%;
+}
+
+.width-33perc {
+  width: 33%;
+}
+
+.width-38perc {
+  width: 38%;
+}
+
+.width-40perc {
+  width: 40%;
+}
+
+.width-50perc {
+  width: 50%;
+}
+
+.width-54perc {
+  width: 54%;
+}
+
+.width-60perc {
+  width: 60%;
+}
+
+.width-65perc {
+  width: 65%;
+}
+
+.width-70perc {
+  width: 70%;
+}
+
+.width-80perc {
+  width: 80%;
+}
+
+.width-93perc {
+  width: 93%;
+}
+
+.width-95perc {
+  width: 95%;
+}
+
+.width-100perc {
+  width: 100%;
+}
+
+.width-40px {
+  width: 40px;
+}
+
+.width-80px {
+  width: 110px;
+}
+
+.width-90px {
+  width: 90px;
+}
+
+.width-130px {
+  width: 130px;
+}
+
+.width-250px {
+  width: 250px;
+}
+
+.height-22perc {
+  height: 22%;
+}
+
+.height-50perc {
+  height: 50%;
+}
+
+.height-60perc {
+  height: 60%;
+}
+
+.height-100perc {
+  height: 100%;
+}
+
+.height-40px {
+  height: 40px;
+}
+
+.height-65px {
+  height: 65px;
+}
+
+.height-80px {
+  height: 80px;
+}
+
+.height-100px {
+  height: 100px;
+}
+
+.height-150px {
+  height: 150px;
+}
+
+.height-200px {
+  height: 200px;
+}
+
+.height-215px {
+  height: 215px;
+}
+
+.height-370px {
+  height: 370px;
+}
+
+.height-720px {
+  height: 720px;
+}
+
+.height-850px {
+  height: 850px;
+}
+
+.height-1000px {
+  height: 1000px;
+}
+
+.height-1050px {
+  height: 1050px;
+}
+
+.hover-button-inicio:hover {
+  background-color: #c9d5fa;
+}
+
+.hover-button-saberMas:hover {
+  background-color: #2a48bc;
+
+}
+
+.hover-button-contactanos:hover {
+  background-color: #eaeaea;
+}
+
+.move-to-right-5perc {
+  position: relative;
+  left: 5%;
+}
+
+.move-to-right-10perc {
+  position: relative;
+  left: 10%;
+}
+
+.move-to-right-20perc {
+  position: relative;
+  left: 20%;
+}
+
+.move-to-right-45perc {
+  position: relative;
+  left: 45%;
+}
+
+.move-to-right-18px {
+  position: relative;
+  left: 20px;
+}
+
+.move-to-up-10px {
+  position: relative;
+  bottom: 10px;
+}
+
+.move-to-up-30px {
+  position: relative;
+  bottom: 30px;
+}
+
+.move-to-up-100px {
+  position: relative;
+  bottom: 100px;
+}
+
+.move-to-up-280px {
+  position: relative;
+  bottom: 280px;
+}
+
+.move-to-up-110px {
+  position: relative;
+  bottom: 110px;
+}
+
+.move-to-left-2perc {
+  position: relative;
+  right: 2%;
+}
+
+.move-to-down-50px {
+  position: relative;
+  top: 50px;
+}
+
+.move-to-down-100px {
+  position: relative;
+  top: 100px;
+}
+
+.top-100px {
+  top: 160px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.width-3000px {
+  width: 3000px;
+}
+
+.w-8rem {
+  width: 8rem;
+}
+
+.w-125px {
+  width: 125px;
+}
+
+.h-125px {
+  height: 125px;
+}
+
+.border-radius-10px {
+  border-radius: 10px;
+}
+
+.border-radius-30px {
+  border-radius: 30px;
+}
+
+.border-radius-80px {
+  border-radius: 80px;
+}
+
+.border-radius-top-80px {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.border-bottom-left-radius-30px {
+  border-bottom-left-radius: 50px;
+}
+
+.border-bottom-right-radius-30px {
+  border-bottom-right-radius: 50px;
+}
+
+.border-width-1px {
+  border-width: 1px;
+}
+
+.border-style-solid {
+  border-style: solid;
+}
+
+.border-width-10px {
+  border-width: 10px;
+}
+
+.border-color-white {
+  border-color: white;
+}
+
+.border-top-solid {
+  border-top: solid;
+}
+
+.border-top-width-1px {
+  border-top-width: 1px;
+}
+
+.border-top-color-d9d9d9 {
+  border-top-color: #d9d9d9;
+}
+
+.bg-border-blue:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+}
+
+.bg-blue-700 {
+  background-color: #1939b6;
+  /* Azul oscuro */
+}
+
+.bg-cream-faf9f6 {
+  background-color: #faf9f6;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-black-282828 {
+  background-color: #282828;
+}
+
+.bg-black-2a2a2a {
+  background-color: #2a2a2a;
+}
+
+.bg-white-f7f7f7 {
+  background-color: #f7f7f7;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-gary-f9fafb {
+  background-color: #f9fafb;
+}
+
+.bg-blue:hover {
+  background-color: blue;
+}
+
+.bg-red-f5dddd {
+  background-color: #f5dddd;
+}
+
+.bg-blue-d1d9f2 {
+  background-color: #d1d9f2;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-brown-7d7d7b {
+  color: #7d7d7b;
+}
+
+.text-blue-700 {
+  color: #1d4ed8;
+}
+
+.text-blue-3366ff {
+  color: #3366ff;
+}
+
+.text-blue-003366 {
+  color: #003366;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-bolder {
+  font-weight: bolder;
+}
+
+.text-shadow-default {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-lg {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.padding-right-40px {
+  padding-right: 40px;
+}
+
+.padding-50px {
+  padding: 50px;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.margin-right-40px {
+  margin-right: 40px;
+}
+
+.margin-right-168px {
+  margin-right: 168px;
+}
+
+.margin-right-20perc {
+  margin-right: 20%;
+}
+
+.margin-right-50perc {
+  margin-right: 50%;
+}
+
+.margin-right-m-40px {
+  margin-right: -40px;
+}
+
+.margin-bottom-m-100px {
+  margin-bottom: -20px;
+}
+
+.margin-top-100px {
+  margin-top: 100px;
+}
+
+.margin-top-250px {
+  margin-top: 250px;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.image-with-shadow {
+  display: block;
+  margin: 50px auto;
+  width: 200px;
+  height: auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slick-slide>div {
+  margin: 0 20px;
+  height: 215px;
+}
+
+/* .slick-list {
+  margin: 0 -10px;
+} */
+
+.table-container {
+  border-radius: 10px;
+  /* Ajusta el valor según lo que necesites */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Opcional: para dar una sombra a la tabla */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Asegura que los bordes no se dupliquen */
+}
+
+/* thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 10px;
+} */
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Estilo del scrollbar vertical */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  /* Ancho del scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e3a8a;
+  /* Color de la pista del scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Color del pulgar del scrollbar */
+  border-radius: 10px;
+  /* Bordes redondeados */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Color del pulgar al hacer hover */
+}
+
+/* Estilo del scrollbar horizontal */
+.custom-scrollbar::-webkit-scrollbar:horizontal {
+  height: 8px;
+  /* Altura del scrollbar horizontal */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:horizontal {
+  background-color: #a0aec0;
+  /* Color del pulgar del scrollbar horizontal */
+  border-radius: 10px;
+  /* Bordes redondeados del pulgar del scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track:horizontal {
+  background-color: #edf2f7;
+  /* Color de la pista del scrollbar horizontal */
+}
+
+/* Cambiar el cursor al hacer hover */
+.custom-cursor:hover {
+  cursor: not-allowed;
+}
+
+/*Para el switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+/*Custom Button*/
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  position: relative; /* Asegura que el ripple se quede dentro del botón */
+  overflow: hidden;
+}
+
+.custom-button .ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-effect 0.6s linear;
+  pointer-events: none; /* Evita que el ripple interfiera con los clics */
+  opacity: 0.75;
+  transform-origin: center; /* Establece el origen del ripple en el centro */
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.button-text {
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté por encima del ripple */
+}
+
+
+/*==================*/
+
+/*Línea de tiempo de resumen*/
+.timeline-event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.timeline-event .team-info {
+  flex: 1;
+}
+
+.timeline-event .icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+/*==================*/
+@media (max-width: 460px) {
+  .header-small {
+    /* Estilos específicos para header en pantallas pequeñas */
+    width: 10%;
+  }
+
+  .section-small {
+    /* Estilos específicos para section en pantallas pequeñas */
+    width: 95%
+  }
+
+  .logo-small {
+    height: 50px;
+    /* Ajusta el tamaño del logo */
+    width: 50px;
+  }
+
+  .button-small {
+    font-size: 12px;
+    /* Reduce el tamaño de fuente */
+    padding: 5px 10px;
+    /* Ajusta el padding de los botones */
+  }
+
+  .button-container-small {
+    gap: 2px;
+    /* Reduce el espacio entre botones */
+  }
+
+  .funcionalidades-small {
+    width: 80%;
+  }
+}

@@ -1,0 +1,3248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charSet="utf-8" />
+    <title>Ligas Futapp</title>
+    <meta name="description" content="Ligas Futapp - Crea y organizá torneos de tu liga local." />
+    <meta name="keywords" content="admin dashboard, soccer, leagues" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="next-head-count" content="5" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="/_next/static/css/00907eb975caaf69.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/00907eb975caaf69.css" data-n-g="" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <noscript
+        data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/_next/static/chunks/webpack-6ef43a8d4a395f49.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+    <script src="/_next/static/chunks/main-1dfd4338d477d040.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-719e90811ec48847.js" defer=""></script>
+    <script src="/_next/static/chunks/851-e44681d593182726.js" defer=""></script>
+    <script src="/_next/static/chunks/387-d9ec386e0d3a7fa4.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-5e0c9edb1b6b90e6.js" defer=""></script>
+    <script src="/_next/static/U0KUia2WaoTq-ZyOTbFtY/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/U0KUia2WaoTq-ZyOTbFtY/_ssgManifest.js" defer=""></script>
+    <style data-emotion="css-global 1g9kdky">
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            box-sizing: border-box;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        strong,
+        b {
+            font-weight: 700;
+        }
+
+        body {
+            margin: 0;
+            color: rgba(47, 43, 61, 0.78);
+            line-height: 1.467;
+            font-size: 0.9375rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            background-color: #F8F7FA;
+        }
+
+        @media print {
+            body {
+                background-color: #FFF;
+            }
+        }
+
+        body::backdrop {
+            background-color: #F8F7FA;
+        }
+    </style>
+    <style data-emotion="css-global s7l87n">
+        .demo-space-x>* {
+            margin-top: 1rem !important;
+            margin-right: 1rem !important;
+        }
+
+        body[dir="rtl"] .demo-space-x>* {
+            margin-right: 0 !important;
+            margin-left: 1rem !important;
+        }
+
+        .demo-space-y>*:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+
+        .MuiGrid-container.match-height .MuiCard-root {
+            height: 100%;
+        }
+
+        .ps__rail-y {
+            z-index: 1;
+            right: 0 !important;
+            left: auto !important;
+        }
+
+        .ps__rail-y:hover,
+        .ps__rail-y:focus,
+        .ps__rail-y.ps--clicking {
+            background-color: #F1F0F5 !important;
+        }
+
+        .ps__rail-y .ps__thumb-y {
+            right: 3px !important;
+            left: auto !important;
+            background-color: rgba(93, 89, 108, 0.2) !important;
+        }
+
+        .layout-vertical-nav .ps__rail-y .ps__thumb-y {
+            width: 4px;
+        }
+
+        .layout-vertical-nav .ps__rail-y:hover,
+        .layout-vertical-nav .ps__rail-y:focus,
+        .layout-vertical-nav .ps__rail-y.ps--clicking {
+            background-color: transparent !important;
+        }
+
+        .layout-vertical-nav .ps__rail-y:hover .ps__thumb-y,
+        .layout-vertical-nav .ps__rail-y:focus .ps__thumb-y,
+        .layout-vertical-nav .ps__rail-y.ps--clicking .ps__thumb-y {
+            width: 6px;
+        }
+
+        #nprogress {
+            pointer-events: none;
+        }
+
+        #nprogress .bar {
+            left: 0;
+            top: 0;
+            height: 3px;
+            width: 100%;
+            z-index: 2000;
+            position: fixed;
+            background-color: #3366FF;
+        }
+    </style>
+    <style
+        data-emotion="css 33gw4 10qwnza h9hfa1 13el0fd 10qr0ou eva15o 1ayq48f 1dnzbhn 1fzkik5 1feiost 141qbfb 61b1vt ixdq46 1sv6n6z 10mgqul 5us5bb bglhnv 1u93ps0 11oq3ox yn4xoa 1enjs5y u6v8er 1gd6pxq 14vsv3w 1wafy91 1ylj2vl 1jyc3z 1taqfyr 155qbr 1azksy9 16ua96a sza4c 1ix3rhm emkln1 keuawj xzqik7 1brn14x 18h8q5c 10mukmf uej8kc 1ielwa7 1bcvmj7 1sq5iqp 14eqwe7 152w64d 17o4j18 1lxwves 1nbgxxl 1hkx1m5 dvxtzn 1knzktt 8iz2ds 1g2gjnv 75ly46 tf2vzc 1l4w6pd xfwi9e 1xvb0zc rpkmlr hd61sp me547p e2ezjl 1yli3h5 17cnwlz kdju3t 1ut51sp 1bnyl2j h2qpui 15j76c0 d2xozw 1ofe3xw 1it3vji q5w8iu yz603d gmuwbf 4z2puh 14udaco pylaja 1ng2hl1 1691ln4">
+        .css-33gw4 {
+            height: 100vh;
+        }
+
+        .css-33gw4 .content-center {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 100vh;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            padding: 1.25rem;
+        }
+
+        .css-33gw4 .content-right {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .css-10qwnza {
+            overflow: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .css-h9hfa1 {
+            position: fixed;
+            z-index: 2;
+            top: 16px;
+            left: 50%;
+            -webkit-translate: -50%;
+            -moz-translate: -50%;
+            -ms-translate: -50%;
+            translate: -50%;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        @media (max-width:1199.95px) {
+            .css-h9hfa1 {
+                top: 0;
+            }
+        }
+
+        .css-13el0fd {
+            background-color: #FFF;
+            color: rgba(47, 43, 61, 0.78);
+            -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            box-shadow: 0px 3px 9px 0px rgba(47, 43, 61, 0.15);
+            background-image: none;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            position: static;
+            background-color: transparent;
+            color: inherit;
+            box-shadow: none;
+        }
+
+        .css-10qr0ou {
+            width: 100%;
+            margin-left: auto;
+            box-sizing: border-box;
+            margin-right: auto;
+            display: block;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            background-color: #F8F8F8;
+            border-radius: 6px;
+            box-shadow: 0px 5px 15px 0px rgba(47, 43, 61, 0.2);
+        }
+
+        @media (min-width:600px) {
+            .css-10qr0ou {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-10qr0ou {
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width:1199.95px) {
+            .css-10qr0ou {
+                border-radius: 0;
+            }
+        }
+
+        .css-eva15o {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            min-height: 64px;
+        }
+
+        @media (min-width:600px) {
+            .css-eva15o {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+        }
+
+        .css-1ayq48f {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+
+        .css-1dnzbhn {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+        }
+
+        .css-1fzkik5 {
+            height: 36px;
+        }
+
+        .css-1feiost {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .css-141qbfb {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            line-height: 1.2;
+            font-size: 0.9375rem;
+            letter-spacing: 0.43px;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 500;
+            text-transform: uppercase;
+            min-width: 64px;
+            padding: 6px 8px;
+            border-radius: 6px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            color: #3366FF;
+            min-width: 50px;
+            text-transform: none;
+            -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            padding: 0.625rem 0.75rem;
+        }
+
+        .css-141qbfb::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-141qbfb.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-141qbfb {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-141qbfb:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: rgba(51, 102, 255, 0.04);
+        }
+
+        @media (hover: none) {
+            .css-141qbfb:hover {
+                background-color: transparent;
+            }
+        }
+
+        .css-141qbfb.Mui-disabled {
+            color: rgba(47, 43, 61, 0.26);
+        }
+
+        .css-141qbfb:not(.Mui-disabled):active {
+            -webkit-transform: scale(0.98);
+            -moz-transform: scale(0.98);
+            -ms-transform: scale(0.98);
+            transform: scale(0.98);
+        }
+
+        .css-141qbfb:hover {
+            background-color: rgba(51, 102, 255, 0.08);
+        }
+
+        .css-61b1vt {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            line-height: 1.2;
+            font-size: 0.9375rem;
+            letter-spacing: 0.43px;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 500;
+            text-transform: uppercase;
+            min-width: 64px;
+            padding: 6px 16px;
+            border-radius: 6px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            min-width: 50px;
+            text-transform: none;
+            -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            padding: 0.625rem 1.25rem;
+            color: #3366FF;
+            background-color: rgba(51, 102, 255, 0.16);
+        }
+
+        .css-61b1vt::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-61b1vt.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-61b1vt {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-61b1vt:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: rgba(47, 43, 61, 0.04);
+        }
+
+        @media (hover: none) {
+            .css-61b1vt:hover {
+                background-color: transparent;
+            }
+        }
+
+        .css-61b1vt.Mui-disabled {
+            color: rgba(47, 43, 61, 0.26);
+        }
+
+        .css-61b1vt:not(.Mui-disabled):active {
+            -webkit-transform: scale(0.98);
+            -moz-transform: scale(0.98);
+            -ms-transform: scale(0.98);
+            transform: scale(0.98);
+        }
+
+        .css-61b1vt.Mui-disabled {
+            background-color: rgba(47, 43, 61, 0.12);
+        }
+
+        .css-61b1vt:hover,
+        .css-61b1vt:active {
+            background-color: rgba(51, 102, 255, 0.24);
+        }
+
+        .css-ixdq46 {
+            background-color: #FFF;
+            color: rgba(47, 43, 61, 0.78);
+            -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            border-radius: 6px;
+            box-shadow: 0px 4px 18px 0px rgba(47, 43, 61, 0.1);
+            background-image: none;
+            overflow: hidden;
+        }
+
+        .css-ixdq46 .card-more-options {
+            margin-top: -0.25rem;
+            margin-right: -0.75rem;
+        }
+
+        .css-ixdq46 .MuiTableContainer-root,
+        .css-ixdq46 .MuiDataGrid-root,
+        .css-ixdq46 .MuiDataGrid-columnHeaders {
+            border-radius: 0;
+        }
+
+        .css-1sv6n6z {
+            padding: 16px;
+            padding: 1.5rem;
+            padding: 5rem 9rem !important;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 100vh;
+            background: #1939B7;
+            -webkit-translate: 0 -100px;
+            -moz-translate: 0 -100px;
+            -ms-translate: 0 -100px;
+            translate: 0 -100px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            text-align: center;
+        }
+
+        .css-1sv6n6z:last-child {
+            padding-bottom: 24px;
+        }
+
+        .css-1sv6n6z+.MuiCardHeader-root,
+        .css-1sv6n6z+.MuiCardContent-root,
+        .css-1sv6n6z+.MuiCardActions-root {
+            padding-top: 0;
+        }
+
+        .css-1sv6n6z:last-of-type {
+            padding-bottom: 1.5rem;
+        }
+
+        @media (max-width:1535.95px) {
+            .css-1sv6n6z {
+                padding: 5rem !important;
+            }
+        }
+
+        @media (max-width:599.95px) {
+            .css-1sv6n6z {
+                padding: 2.5rem 1.25rem !important;
+            }
+        }
+
+        .css-10mgqul {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.6875rem;
+            line-height: 1.368421;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: rgba(47, 43, 61, 0.78);
+            color: #FFF;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width:600px) {
+            .css-10mgqul {
+                font-size: 2.0096rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-10mgqul {
+                font-size: 2.1923rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-10mgqul {
+                font-size: 2.375rem;
+            }
+        }
+
+        .css-5us5bb {
+            margin: 0;
+            font-weight: 500;
+            line-height: 1.3334;
+            font-size: 1.0625rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: rgba(47, 43, 61, 0.78);
+            color: #E0E0E0;
+            margin-bottom: 2rem;
+            max-width: 700px;
+        }
+
+        @media (min-width:600px) {
+            .css-5us5bb {
+                font-size: 1.1249rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-5us5bb {
+                font-size: 1.1249rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-5us5bb {
+                font-size: 1.1249rem;
+            }
+        }
+
+        .css-bglhnv {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .css-bglhnv button {
+            white-space: nowrap;
+        }
+
+        .css-1u93ps0 {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            line-height: 1.2;
+            font-size: 0.9375rem;
+            letter-spacing: 0.43px;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 500;
+            text-transform: uppercase;
+            min-width: 64px;
+            padding: 6px 16px;
+            border-radius: 6px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            color: #000;
+            background-color: #F8F8F8;
+            box-shadow: 0px 2px 6px 0px rgba(47, 43, 61, 0.14);
+            min-width: 50px;
+            text-transform: none;
+            -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            box-shadow: 0px 2px 6px 0px rgba(47, 43, 61, 0.14);
+            padding: 0.625rem 1.25rem;
+        }
+
+        .css-1u93ps0::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-1u93ps0.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-1u93ps0 {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-1u93ps0:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: #EAEAEA;
+            box-shadow: 0px 3px 9px 0px rgba(47, 43, 61, 0.15);
+        }
+
+        @media (hover: none) {
+            .css-1u93ps0:hover {
+                background-color: #F8F8F8;
+            }
+        }
+
+        .css-1u93ps0:active {
+            box-shadow: 0px 4px 13px 0px rgba(47, 43, 61, 0.18);
+        }
+
+        .css-1u93ps0.Mui-focusVisible {
+            box-shadow: 0px 4px 11px 0px rgba(47, 43, 61, 0.16);
+        }
+
+        .css-1u93ps0.Mui-disabled {
+            color: rgba(47, 43, 61, 0.26);
+            box-shadow: none;
+            background-color: rgba(47, 43, 61, 0.12);
+        }
+
+        .css-1u93ps0:not(.Mui-disabled):active {
+            -webkit-transform: scale(0.98);
+            -moz-transform: scale(0.98);
+            -ms-transform: scale(0.98);
+            transform: scale(0.98);
+        }
+
+        .css-1u93ps0:hover {
+            box-shadow: 0px 2px 6px 0px rgba(47, 43, 61, 0.14);
+        }
+
+        .css-11oq3ox {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            margin: 0;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: inherit;
+            line-height: 1.2;
+            font-size: 0.9375rem;
+            letter-spacing: 0.43px;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 500;
+            text-transform: uppercase;
+            min-width: 64px;
+            padding: 5px 15px;
+            border-radius: 6px;
+            -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            border: 1px solid rgba(248, 248, 248, 0.5);
+            color: #F8F8F8;
+            min-width: 50px;
+            text-transform: none;
+            -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            padding: 0.5625rem 1.1875rem;
+            border-color: #F8F8F8;
+        }
+
+        .css-11oq3ox::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .css-11oq3ox.Mui-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @media print {
+            .css-11oq3ox {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+
+        .css-11oq3ox:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: rgba(248, 248, 248, 0.04);
+            border: 1px solid #F8F8F8;
+        }
+
+        @media (hover: none) {
+            .css-11oq3ox:hover {
+                background-color: transparent;
+            }
+        }
+
+        .css-11oq3ox.Mui-disabled {
+            color: rgba(47, 43, 61, 0.26);
+            border: 1px solid rgba(47, 43, 61, 0.12);
+        }
+
+        .css-11oq3ox:not(.Mui-disabled):active {
+            -webkit-transform: scale(0.98);
+            -moz-transform: scale(0.98);
+            -ms-transform: scale(0.98);
+            transform: scale(0.98);
+        }
+
+        .css-11oq3ox:hover {
+            background-color: rgba(248, 248, 248, 0.08);
+        }
+
+        .css-yn4xoa {
+            border-radius: 6px;
+            position: absolute;
+            left: 50%;
+            -webkit-translate: -50%;
+            -moz-translate: -50%;
+            -ms-translate: -50%;
+            translate: -50%;
+            bottom: -250px;
+            z-index: 2;
+            max-height: 450px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width:1199.95px) {
+            .css-yn4xoa {
+                max-height: 300px;
+                bottom: -150px;
+            }
+        }
+
+        .css-1enjs5y {
+            padding: 16px;
+            padding: 1.5rem;
+            padding: 5rem 9rem !important;
+        }
+
+        .css-1enjs5y:last-child {
+            padding-bottom: 24px;
+        }
+
+        .css-1enjs5y+.MuiCardHeader-root,
+        .css-1enjs5y+.MuiCardContent-root,
+        .css-1enjs5y+.MuiCardActions-root {
+            padding-top: 0;
+        }
+
+        .css-1enjs5y:last-of-type {
+            padding-bottom: 1.5rem;
+        }
+
+        @media (max-width:1535.95px) {
+            .css-1enjs5y {
+                padding: 5rem !important;
+            }
+        }
+
+        @media (max-width:599.95px) {
+            .css-1enjs5y {
+                padding: 2.5rem 1.25rem !important;
+            }
+        }
+
+        .css-u6v8er {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .css-1gd6pxq {
+            max-width: 100%;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 0.76171875rem;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            height: 32px;
+            color: #FFF;
+            background-color: #3366FF;
+            border-radius: 16px;
+            white-space: nowrap;
+            -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            cursor: default;
+            outline: 0;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            border: 0;
+            padding: 0;
+            vertical-align: middle;
+            box-sizing: border-box;
+            font-weight: 500;
+            font-size: 0.8125rem;
+            height: 30px;
+            color: #3366FF;
+            background-color: rgba(51, 102, 255, 0.16);
+            margin-bottom: 2rem;
+        }
+
+        .css-1gd6pxq.Mui-disabled {
+            opacity: 0.38;
+            pointer-events: none;
+        }
+
+        .css-1gd6pxq .MuiChip-avatar {
+            margin-left: 5px;
+            margin-right: -6px;
+            width: 24px;
+            height: 24px;
+            color: #616161;
+            font-size: 0.703125rem;
+        }
+
+        .css-1gd6pxq .MuiChip-avatarColorPrimary {
+            color: #FFF;
+            background-color: #1939B7;
+        }
+
+        .css-1gd6pxq .MuiChip-avatarColorSecondary {
+            color: #000;
+            background-color: #EAEAEA;
+        }
+
+        .css-1gd6pxq .MuiChip-avatarSmall {
+            margin-left: 4px;
+            margin-right: -4px;
+            width: 18px;
+            height: 18px;
+            font-size: 0.5859375rem;
+        }
+
+        .css-1gd6pxq .MuiChip-icon {
+            margin-left: 5px;
+            margin-right: -6px;
+            color: inherit;
+        }
+
+        .css-1gd6pxq .MuiChip-deleteIcon {
+            -webkit-tap-highlight-color: transparent;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 22px;
+            cursor: pointer;
+            margin: 0 5px 0 -6px;
+        }
+
+        .css-1gd6pxq .MuiChip-deleteIcon:hover {
+            color: rgba(47, 43, 61, 0.4);
+        }
+
+        .css-1gd6pxq .MuiChip-deleteIcon:hover,
+        .css-1gd6pxq .MuiChip-deleteIcon:active {
+            color: #FFF;
+        }
+
+        .css-1gd6pxq .MuiChip-avatar {
+            color: rgba(47, 43, 61, 0.78);
+        }
+
+        .css-1gd6pxq .MuiChip-deleteIcon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .css-1gd6pxq.MuiChip-rounded {
+            border-radius: 4px;
+        }
+
+        .css-14vsv3w {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 12px;
+            padding-right: 12px;
+            white-space: nowrap;
+        }
+
+        .css-1wafy91 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.375;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: rgba(47, 43, 61, 0.78);
+            color: #3366FF;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width:600px) {
+            .css-1wafy91 {
+                font-size: 1.8182rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1wafy91 {
+                font-size: 1.8182rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1wafy91 {
+                font-size: 2rem;
+            }
+        }
+
+        .css-1ylj2vl {
+            margin: 0;
+            line-height: 1.467;
+            font-size: 0.9375rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            color: rgba(47, 43, 61, 0.78);
+            color: #9E9E9E;
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 700px;
+        }
+
+        .css-1jyc3z {
+            --Grid-columns: 12;
+            --Grid-columnSpacing: 1.5rem;
+            --Grid-rowSpacing: 1.5rem;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            min-width: 0;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: calc(var(--Grid-rowSpacing) / -2) calc(var(--Grid-columnSpacing) / -2);
+            max-width: 900px;
+        }
+
+        .css-1taqfyr {
+            min-width: 0;
+            box-sizing: border-box;
+            padding: calc(var(--Grid-rowSpacing) / 2) calc(var(--Grid-columnSpacing) / 2);
+        }
+
+        @media (min-width:600px) {
+            .css-1taqfyr {
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                -webkit-flex-basis: auto;
+                -ms-flex-preferred-size: auto;
+                flex-basis: auto;
+                width: calc(100% * 4 / var(--Grid-columns));
+            }
+        }
+
+        .css-155qbr {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1.5rem;
+            border-radius: 6px;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in;
+        }
+
+        .css-155qbr:hover {
+            box-shadow: 0px 3px 8px 0px rgba(47, 43, 61, 0.14);
+        }
+
+        .css-1azksy9 {
+            color: #3366FF;
+        }
+
+        .css-16ua96a {
+            margin: 0;
+            font-weight: 500;
+            line-height: 1.364;
+            font-size: 1.1875rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: rgba(47, 43, 61, 0.78);
+            text-align: center;
+        }
+
+        @media (min-width:600px) {
+            .css-16ua96a {
+                font-size: 1.283rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-16ua96a {
+                font-size: 1.283rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-16ua96a {
+                font-size: 1.4663rem;
+            }
+        }
+
+        .css-sza4c {
+            margin: 0;
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            color: rgba(47, 43, 61, 0.68);
+            color: #9E9E9E;
+            text-align: center;
+        }
+
+        .css-1ix3rhm {
+            min-height: 100vh;
+            padding: 1.5rem;
+            position: relative;
+            background-color: rgba(0, 0, 0, .4);
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .css-emkln1 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .css-keuawj {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.6875rem;
+            line-height: 1.368421;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: rgba(47, 43, 61, 0.78);
+            color: #FFF;
+            text-align: center;
+            max-width: 700px;
+        }
+
+        @media (min-width:600px) {
+            .css-keuawj {
+                font-size: 2.0096rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-keuawj {
+                font-size: 2.1923rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-keuawj {
+                font-size: 2.375rem;
+            }
+        }
+
+        .css-xzqik7 {
+            background-color: #FFF;
+            color: rgba(47, 43, 61, 0.78);
+            -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            border-radius: 6px;
+            box-shadow: 0px 4px 18px 0px rgba(47, 43, 61, 0.1);
+            background-image: none;
+            overflow: hidden;
+            box-shadow: none;
+        }
+
+        .css-xzqik7 .card-more-options {
+            margin-top: -0.25rem;
+            margin-right: -0.75rem;
+        }
+
+        .css-xzqik7 .MuiTableContainer-root,
+        .css-xzqik7 .MuiDataGrid-root,
+        .css-xzqik7 .MuiDataGrid-columnHeaders {
+            border-radius: 0;
+        }
+
+        .css-1brn14x {
+            padding: 16px;
+            padding: 1.5rem;
+            padding: 5rem 9rem !important;
+            background-color: rgba(47, 43, 61, 0.04);
+        }
+
+        .css-1brn14x:last-child {
+            padding-bottom: 24px;
+        }
+
+        .css-1brn14x+.MuiCardHeader-root,
+        .css-1brn14x+.MuiCardContent-root,
+        .css-1brn14x+.MuiCardActions-root {
+            padding-top: 0;
+        }
+
+        .css-1brn14x:last-of-type {
+            padding-bottom: 1.5rem;
+        }
+
+        @media (max-width:1535.95px) {
+            .css-1brn14x {
+                padding: 5rem !important;
+            }
+        }
+
+        @media (max-width:599.95px) {
+            .css-1brn14x {
+                padding: 2.5rem 1.25rem !important;
+            }
+        }
+
+        .css-18h8q5c {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .css-10mukmf {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.375;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: rgba(47, 43, 61, 0.78);
+            margin-bottom: 0.625rem;
+        }
+
+        @media (min-width:600px) {
+            .css-10mukmf {
+                font-size: 1.8182rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-10mukmf {
+                font-size: 1.8182rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-10mukmf {
+                font-size: 2rem;
+            }
+        }
+
+        .css-uej8kc {
+            margin: 0;
+            line-height: 1.467;
+            font-size: 0.9375rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            color: rgba(47, 43, 61, 0.78);
+            color: rgba(47, 43, 61, 0.42);
+        }
+
+        .css-1ielwa7 {
+            margin-top: 2rem;
+            border-radius: 6px;
+            border: 1px solid;
+            border-color: rgba(47, 43, 61, 0.16);
+        }
+
+        .css-1ielwa7 .MuiTableRow-root:nth-of-type(even) {
+            background-color: rgba(47, 43, 61, 0.04);
+        }
+
+        .css-1bcvmj7 {
+            width: 100%;
+            overflow-x: auto;
+            box-shadow: none;
+            border-top-color: rgba(47, 43, 61, 0.16);
+        }
+
+        .css-1sq5iqp {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .css-1sq5iqp caption {
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            padding: 0.5rem;
+            color: rgba(47, 43, 61, 0.68);
+            text-align: left;
+            caption-side: bottom;
+        }
+
+        .css-14eqwe7 {
+            display: table-header-group;
+            text-transform: uppercase;
+        }
+
+        .css-14eqwe7 .MuiTableCell-head {
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 0.8125rem;
+        }
+
+        .css-152w64d {
+            color: inherit;
+            display: table-row;
+            vertical-align: middle;
+            outline: 0;
+        }
+
+        .css-152w64d.MuiTableRow-hover:hover {
+            background-color: rgba(47, 43, 61, 0.04);
+        }
+
+        .css-152w64d.Mui-selected {
+            background-color: rgba(51, 102, 255, 0.06);
+        }
+
+        .css-152w64d.Mui-selected:hover {
+            background-color: rgba(51, 102, 255, 0.1);
+        }
+
+        .css-152w64d .MuiTableCell-head:not(.MuiTableCell-paddingCheckbox):first-child,
+        .css-152w64d .MuiTableCell-root:not(.MuiTableCell-paddingCheckbox):first-child {
+            padding-left: 1.5rem;
+        }
+
+        .css-152w64d .MuiTableCell-head:last-child,
+        .css-152w64d .MuiTableCell-root:last-child {
+            padding-right: 1.5rem;
+        }
+
+        .css-17o4j18 {
+            font-size: 0.8125rem;
+            line-height: 1.40625rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 500;
+            display: table-cell;
+            vertical-align: inherit;
+            border-bottom: 1px solid rgba(230, 229, 231, 1);
+            text-align: left;
+            padding: 16px;
+            color: rgba(47, 43, 61, 0.78);
+            border-bottom: 1px solid rgba(47, 43, 61, 0.16);
+        }
+
+        .css-1lxwves {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: flex-start;
+            -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+        }
+
+        .css-1nbgxxl {
+            margin: 0;
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: rgba(47, 43, 61, 0.68);
+            color: rgba(47, 43, 61, 0.78);
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+            line-height: 1.154;
+        }
+
+        .css-1hkx1m5 {
+            margin: 0;
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: rgba(47, 43, 61, 0.68);
+            color: rgba(47, 43, 61, 0.42);
+            text-transform: capitalize;
+        }
+
+        .css-dvxtzn {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .css-1knzktt {
+            display: table-row-group;
+        }
+
+        .css-1knzktt .MuiTableCell-body {
+            letter-spacing: 0.25px;
+            color: rgba(47, 43, 61, 0.68);
+        }
+
+        .css-1knzktt .MuiTableCell-body:not(.MuiTableCell-sizeSmall):not(.MuiTableCell-paddingCheckbox):not(.MuiTableCell-paddingNone) {
+            padding-top: 0.875rem;
+            padding-bottom: 0.875rem;
+        }
+
+        .css-8iz2ds {
+            color: inherit;
+            display: table-row;
+            vertical-align: middle;
+            outline: 0;
+        }
+
+        .css-8iz2ds.MuiTableRow-hover:hover {
+            background-color: rgba(47, 43, 61, 0.04);
+        }
+
+        .css-8iz2ds.Mui-selected {
+            background-color: rgba(51, 102, 255, 0.06);
+        }
+
+        .css-8iz2ds.Mui-selected:hover {
+            background-color: rgba(51, 102, 255, 0.1);
+        }
+
+        .css-8iz2ds .MuiTableCell-head:not(.MuiTableCell-paddingCheckbox):first-child,
+        .css-8iz2ds .MuiTableCell-root:not(.MuiTableCell-paddingCheckbox):first-child {
+            padding-left: 1.5rem;
+        }
+
+        .css-8iz2ds .MuiTableCell-head:last-child,
+        .css-8iz2ds .MuiTableCell-root:last-child {
+            padding-right: 1.5rem;
+        }
+
+        .css-8iz2ds .MuiTableCell-root {
+            padding-top: 0.75rem !important;
+            padding-bottom: 0.75rem !important;
+        }
+
+        .css-1g2gjnv {
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            display: table-cell;
+            vertical-align: inherit;
+            border-bottom: 1px solid rgba(230, 229, 231, 1);
+            text-align: left;
+            padding: 16px;
+            color: rgba(47, 43, 61, 0.78);
+            border-bottom: 1px solid rgba(47, 43, 61, 0.16);
+            white-space: nowrap;
+        }
+
+        .css-75ly46 {
+            margin: 0;
+            line-height: 1.467;
+            font-size: 0.9375rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            color: rgba(47, 43, 61, 0.78);
+            color: rgba(47, 43, 61, 0.68);
+        }
+
+        .css-tf2vzc {
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            display: table-cell;
+            vertical-align: inherit;
+            border-bottom: 1px solid rgba(230, 229, 231, 1);
+            text-align: left;
+            padding: 16px;
+            color: rgba(47, 43, 61, 0.78);
+            border-bottom: 1px solid rgba(47, 43, 61, 0.16);
+        }
+
+        .css-1l4w6pd {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .css-xfwi9e {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1.171875rem;
+            line-height: 1;
+            border-radius: 50%;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #F8F7FA;
+            background-color: #BDBDBD;
+            font-size: 0.9375rem;
+            color: rgba(47, 43, 61, 0.68);
+            background-color: #DBDADE;
+            color: #3366FF;
+            background-color: rgba(51, 102, 255, 0.16);
+            width: 20px;
+            height: 20px;
+        }
+
+        .css-1xvb0zc {
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            display: table-cell;
+            vertical-align: inherit;
+            border-bottom: 1px solid rgba(230, 229, 231, 1);
+            text-align: center;
+            padding: 16px;
+            color: rgba(47, 43, 61, 0.78);
+            border-bottom: 1px solid rgba(47, 43, 61, 0.16);
+        }
+
+        .css-rpkmlr {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1.171875rem;
+            line-height: 1;
+            border-radius: 50%;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #F8F7FA;
+            background-color: #BDBDBD;
+            font-size: 0.9375rem;
+            color: rgba(47, 43, 61, 0.68);
+            background-color: #DBDADE;
+            color: #EA5455;
+            background-color: rgba(234, 84, 85, 0.16);
+            width: 20px;
+            height: 20px;
+        }
+
+        .css-hd61sp {
+            color: inherit;
+            display: table-row;
+            vertical-align: middle;
+            outline: 0;
+            height: 50px;
+        }
+
+        .css-hd61sp.MuiTableRow-hover:hover {
+            background-color: rgba(47, 43, 61, 0.04);
+        }
+
+        .css-hd61sp.Mui-selected {
+            background-color: rgba(51, 102, 255, 0.06);
+        }
+
+        .css-hd61sp.Mui-selected:hover {
+            background-color: rgba(51, 102, 255, 0.1);
+        }
+
+        .css-hd61sp .MuiTableCell-head:not(.MuiTableCell-paddingCheckbox):first-child,
+        .css-hd61sp .MuiTableCell-root:not(.MuiTableCell-paddingCheckbox):first-child {
+            padding-left: 1.5rem;
+        }
+
+        .css-hd61sp .MuiTableCell-head:last-child,
+        .css-hd61sp .MuiTableCell-root:last-child {
+            padding-right: 1.5rem;
+        }
+
+        .css-hd61sp .MuiTableCell-root {
+            border: 0px solid;
+        }
+
+        .css-me547p {
+            background-color: action:hover;
+        }
+
+        .css-e2ezjl {
+            background-color: #000;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+
+        .css-1yli3h5 {
+            width: 100%;
+            margin-left: auto;
+            box-sizing: border-box;
+            margin-right: auto;
+            display: block;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            text-align: center;
+            padding-top: 4rem;
+            padding-bottom: 1rem;
+        }
+
+        @media (min-width:600px) {
+            .css-1yli3h5 {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1yli3h5 {
+                max-width: 1200px;
+            }
+        }
+
+        .css-17cnwlz {
+            max-width: 100%;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 0.76171875rem;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            height: 24px;
+            color: #000;
+            background-color: #F8F8F8;
+            border-radius: 16px;
+            white-space: nowrap;
+            -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            cursor: default;
+            outline: 0;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            border: 0;
+            padding: 0;
+            vertical-align: middle;
+            box-sizing: border-box;
+            font-weight: 500;
+            font-size: 0.8125rem;
+            color: #F8F8F8;
+            background-color: rgba(248, 248, 248, 0.16);
+        }
+
+        .css-17cnwlz.Mui-disabled {
+            opacity: 0.38;
+            pointer-events: none;
+        }
+
+        .css-17cnwlz .MuiChip-avatar {
+            margin-left: 5px;
+            margin-right: -6px;
+            width: 24px;
+            height: 24px;
+            color: #616161;
+            font-size: 0.703125rem;
+        }
+
+        .css-17cnwlz .MuiChip-avatarColorPrimary {
+            color: #FFF;
+            background-color: #1939B7;
+        }
+
+        .css-17cnwlz .MuiChip-avatarColorSecondary {
+            color: #000;
+            background-color: #EAEAEA;
+        }
+
+        .css-17cnwlz .MuiChip-avatarSmall {
+            margin-left: 4px;
+            margin-right: -4px;
+            width: 18px;
+            height: 18px;
+            font-size: 0.5859375rem;
+        }
+
+        .css-17cnwlz .MuiChip-icon {
+            margin-left: 4px;
+            margin-right: -4px;
+            font-size: 18px;
+            color: inherit;
+        }
+
+        .css-17cnwlz .MuiChip-deleteIcon {
+            -webkit-tap-highlight-color: transparent;
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 5px 0 -6px;
+            margin-right: 4px;
+            margin-left: -4px;
+        }
+
+        .css-17cnwlz .MuiChip-deleteIcon:hover {
+            color: rgba(47, 43, 61, 0.4);
+        }
+
+        .css-17cnwlz .MuiChip-deleteIcon:hover,
+        .css-17cnwlz .MuiChip-deleteIcon:active {
+            color: #000;
+        }
+
+        .css-17cnwlz .MuiChip-avatar {
+            color: rgba(47, 43, 61, 0.78);
+        }
+
+        .css-17cnwlz .MuiChip-deleteIcon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .css-17cnwlz.MuiChip-rounded {
+            border-radius: 4px;
+        }
+
+        .css-kdju3t {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 8px;
+            padding-right: 8px;
+            white-space: nowrap;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+        }
+
+        .css-1ut51sp {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.6875rem;
+            line-height: 1.368421;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: rgba(47, 43, 61, 0.78);
+            color: #F8F8F8;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width:600px) {
+            .css-1ut51sp {
+                font-size: 2.0096rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1ut51sp {
+                font-size: 2.1923rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1ut51sp {
+                font-size: 2.375rem;
+            }
+        }
+
+        .css-1bnyl2j {
+            margin: 0;
+            font-size: 1rem;
+            letter-spacing: 0.15px;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            line-height: 1.75;
+            color: rgba(47, 43, 61, 0.78);
+            color: #EAEAEA;
+            margin-bottom: 1.5rem;
+        }
+
+        .css-h2qpui {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: 100%;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            margin-top: -1.5rem;
+            width: calc(100% + 1.5rem);
+            margin-left: -1.5rem;
+        }
+
+        .css-h2qpui>.MuiGrid-item {
+            padding-top: 1.5rem;
+        }
+
+        .css-h2qpui>.MuiGrid-item {
+            padding-left: 1.5rem;
+        }
+
+        .css-15j76c0 {
+            box-sizing: border-box;
+            margin: 0;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            max-width: 100%;
+        }
+
+        @media (min-width:600px) {
+            .css-15j76c0 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-15j76c0 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-15j76c0 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:1536px) {
+            .css-15j76c0 {
+                -webkit-flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                max-width: 100%;
+            }
+        }
+
+        .css-d2xozw {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            border-radius: 5px;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding: 1.5rem;
+            background-color: rgba(47, 43, 61, 0.04);
+        }
+
+        .css-1ofe3xw {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1.171875rem;
+            line-height: 1;
+            border-radius: 6px;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #F8F7FA;
+            background-color: #BDBDBD;
+            font-size: 0.9375rem;
+            color: rgba(47, 43, 61, 0.68);
+            background-color: #DBDADE;
+            color: #F8F8F8;
+            background-color: rgba(248, 248, 248, 0.16);
+            margin-bottom: 0.625rem;
+            height: 38px;
+            width: 38px;
+        }
+
+        .css-1it3vji {
+            margin: 0;
+            font-weight: 500;
+            line-height: 1.364;
+            font-size: 1.1875rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: rgba(47, 43, 61, 0.78);
+            color: #F8F8F8;
+            margin-bottom: 0.625rem;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        @media (min-width:600px) {
+            .css-1it3vji {
+                font-size: 1.283rem;
+            }
+        }
+
+        @media (min-width:900px) {
+            .css-1it3vji {
+                font-size: 1.283rem;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .css-1it3vji {
+                font-size: 1.4663rem;
+            }
+        }
+
+        .css-1it3vji:hover {
+            color: #3366FF;
+        }
+
+        .css-q5w8iu {
+            margin: 0;
+            line-height: 1.467;
+            font-size: 0.9375rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            color: rgba(47, 43, 61, 0.78);
+            color: #F8F8F8;
+        }
+
+        .css-yz603d {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .css-gmuwbf {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .css-4z2puh {
+            margin: 0;
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            color: rgba(47, 43, 61, 0.68);
+            color: #F8F8F8;
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .css-14udaco {
+            margin: 0;
+            font-size: 0.8125rem;
+            line-height: 1.53846154;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            color: rgba(47, 43, 61, 0.68);
+            color: #F8F8F8;
+            margin-top: 0.5rem;
+        }
+
+        .css-pylaja {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        .css-1ng2hl1 {
+            margin: 0;
+            line-height: 1.467;
+            font-size: 0.9375rem;
+            font-family: Public Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+            color: rgba(47, 43, 61, 0.78);
+            color: #F8F8F8;
+            margin-left: 0.5rem;
+        }
+
+        .css-1691ln4>div {
+            left: 1.5rem !important;
+            right: 1.5rem !important;
+            bottom: 1.5rem !important;
+            top: 139px !important;
+            z-index: 1201 !important;
+        }
+
+        .css-1691ln4 .react-hot-toast {
+            font-weight: 400;
+            letter-spacing: 0.14px;
+            box-shadow: 0px 3px 9px 0px rgba(47, 43, 61, 0.15);
+            color: rgba(47, 43, 61, 0.78);
+            border-radius: 6px;
+            font-size: 0.9375rem;
+            background: #FFF;
+        }
+
+        .css-1691ln4 .react-hot-toast>:first-of-type:not([role])>:first-of-type {
+            width: 14px;
+            height: 14px;
+        }
+    </style>
+    <style
+        data-href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673toPgAcu.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgAcu.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpjgAcu.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tqPhwcu.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tq2hwcu.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuSJm5wA.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5wA.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuJJm5wA.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuyJ65wA.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65wA.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJPax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJLax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJzax8s3Jik.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJPax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJLax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJzax8s3Jik.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJPax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJLax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJzax8s3Jik.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJPax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJLax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJzax8s3Jik.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJPax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJLax8s3JimW3w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: italic;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwTs572Xtc6ZYQws9YVwnNDTJzax8s3Jik.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNJfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNIfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNJfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNIfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNJfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNIfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNJfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNIfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNJfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNIfJ7QwOk1Fig.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/publicsans/v15/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next">
+        <div class="layout-wrapper MuiBox-root css-33gw4">
+            <div class="app-content MuiBox-root css-10qwnza">
+                <div class="MuiBox-root css-h9hfa1">
+                    <header
+                        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-13el0fd">
+                        <div class="MuiContainer-root MuiContainer-maxWidthLg css-10qr0ou">
+                            <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-eva15o">
+                                <div class="MuiBox-root css-1ayq48f">
+                                    <div class="MuiBox-root css-1dnzbhn"><img alt="futapp logo"
+                                            src="/images/logos/app-logo-primary.png" class="css-1fzkik5" /></div>
+                                </div>
+                                <div class="MuiBox-root css-1feiost"><a href="/register/"><button
+                                            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-141qbfb"
+                                            tabindex="0" type="button">Registrarse</button></a><a href="/login/"><button
+                                            class="MuiButtonBase-root MuiButton-root MuiButton-tonal MuiButton-tonalPrimary MuiButton-sizeMedium MuiButton-tonalSizeMedium MuiButton-root MuiButton-tonal MuiButton-tonalPrimary MuiButton-sizeMedium MuiButton-tonalSizeMedium css-61b1vt"
+                                            tabindex="0" type="button">Ingresar</button></a></div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation7 MuiCard-root css-ixdq46">
+                    <div class="MuiCardContent-root css-1sv6n6z">
+                        <h1 class="MuiTypography-root MuiTypography-h1 css-10mgqul">Lleva tu liga a otro nivel</h1>
+                        <h2 class="MuiTypography-root MuiTypography-h5 css-5us5bb">Simplifica la gestión de tu liga y
+                            ofrece a tus equipos y jugadores una mejor experiencia.</h2>
+                        <div class="MuiBox-root css-bglhnv"><a href="/#footer"><button
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1u93ps0"
+                                    tabindex="0" type="button">Contáctanos</button></a><a href="/#features"><button
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-11oq3ox"
+                                    tabindex="0" type="button">Saber mas</button></a></div><img alt="demo app image"
+                            src="/images/pages/demo-app.png" class="css-yn4xoa" />
+                    </div>
+                </div>
+                <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation7 MuiCard-root css-ixdq46">
+                    <div class="MuiCardContent-root css-1enjs5y" id="features">
+                        <div class="MuiBox-root css-u6v8er">
+                            <div class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorPrimary MuiChip-filledPrimary MuiChip-light css-1gd6pxq"
+                                skin="light"><span class="MuiChip-label MuiChip-labelMedium css-14vsv3w">Features</span>
+                            </div>
+                            <h1 class="MuiTypography-root MuiTypography-h2 css-1wafy91">Simplifica la gestión de tu liga
+                            </h1>
+                            <h2 class="MuiTypography-root MuiTypography-body1 css-1ylj2vl">Funcionalidades para
+                                diferentes roles: administradores, jugadores y planilleros</h2>
+                            <div
+                                class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-6 css-1jyc3z">
+                                <div class="MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-sm-4 css-1taqfyr">
+                                    <div class="MuiBox-root css-155qbr">
+                                        <div class="MuiBox-root css-1azksy9"><span></span></div>
+                                        <h3 class="MuiTypography-root MuiTypography-h4 css-16ua96a">Comunicaciones</h3>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-sza4c">Conecta con
+                                            delegados y jugadores de forma autónoma para mantener informado de los
+                                            distintos acontecimientos de tu liga</p>
+                                    </div>
+                                </div>
+                                <div class="MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-sm-4 css-1taqfyr">
+                                    <div class="MuiBox-root css-155qbr">
+                                        <div class="MuiBox-root css-1azksy9"><span></span></div>
+                                        <h3 class="MuiTypography-root MuiTypography-h4 css-16ua96a">Gestión Liga</h3>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-sza4c">Facilita la
+                                            organización y desarrollo de la liga o torneo, automatizando creación de
+                                            fixture y cálculo de tablas</p>
+                                    </div>
+                                </div>
+                                <div class="MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-sm-4 css-1taqfyr">
+                                    <div class="MuiBox-root css-155qbr">
+                                        <div class="MuiBox-root css-1azksy9"><span></span></div>
+                                        <h3 class="MuiTypography-root MuiTypography-h4 css-16ua96a">Ingreso Resultados
+                                        </h3>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-sza4c">Planilleros ingresan
+                                            resultados al instante digitalmente, no más planillas y papeleo</p>
+                                    </div>
+                                </div>
+                                <div class="MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-sm-4 css-1taqfyr">
+                                    <div class="MuiBox-root css-155qbr">
+                                        <div class="MuiBox-root css-1azksy9"><span></span></div>
+                                        <h3 class="MuiTypography-root MuiTypography-h4 css-16ua96a">Información Online
+                                        </h3>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-sza4c">Jugadores obtienen
+                                            información online de goles, resultados, actualización de tablas y
+                                            sancionados</p>
+                                    </div>
+                                </div>
+                                <div class="MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-sm-4 css-1taqfyr">
+                                    <div class="MuiBox-root css-155qbr">
+                                        <div class="MuiBox-root css-1azksy9"><span></span></div>
+                                        <h3 class="MuiTypography-root MuiTypography-h4 css-16ua96a">Datos Históricos
+                                        </h3>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-sza4c">Registro histórico
+                                            de la liga, palmarés, estadísticas, comparativas de desempeño a nivel equipo
+                                            o jugador</p>
+                                    </div>
+                                </div>
+                                <div class="MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-sm-4 css-1taqfyr">
+                                    <div class="MuiBox-root css-155qbr">
+                                        <div class="MuiBox-root css-1azksy9"><span></span></div>
+                                        <h3 class="MuiTypography-root MuiTypography-h4 css-16ua96a">Fidelización</h3>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-sza4c">Mantén a tu
+                                            audiencia conectada y cultiva lealtad a hacia tu liga</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiBox-root css-1ix3rhm">
+                    <div class="MuiBox-root css-emkln1"><img src="/images/pages/football-field.jpg" alt="pricing bg"
+                            style="width:100%;height:100%;object-fit:cover" /></div>
+                    <p class="MuiTypography-root MuiTypography-h1 css-keuawj">Lleva tus ligas y torneos a otro nivel con
+                        Futapp Leagues. Automatiza y facilita la gestión de los distintos roles, entregado a los
+                        jugadores una mejor experiencia.</p>
+                </div>
+                <div
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation7 MuiCard-root css-xzqik7">
+                    <div class="MuiCardContent-root css-1brn14x" id="tabla-cuentas">
+                        <div>
+                            <div class="MuiBox-root css-18h8q5c">
+                                <h2 class="MuiTypography-root MuiTypography-h2 css-10mukmf">Principales Funcionalidades
+                                </h2>
+                                <p class="MuiTypography-root MuiTypography-body1 css-uej8kc">Funcionalidades para
+                                    diferentes roles: administradores, jugadores y planilleros</p>
+                            </div>
+                            <div class="MuiBox-root css-1ielwa7">
+                                <div class="MuiTableContainer-root css-1bcvmj7">
+                                    <table class="MuiTable-root css-1sq5iqp">
+                                        <thead class="MuiTableHead-root css-14eqwe7">
+                                            <tr class="MuiTableRow-root MuiTableRow-head css-152w64d">
+                                                <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-17o4j18"
+                                                    scope="col">
+                                                    <div class="MuiBox-root css-1lxwves">
+                                                        <p
+                                                            class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-1nbgxxl">
+                                                            Funcionalidad</p>
+                                                        <p
+                                                            class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-1hkx1m5">
+                                                        </p>
+                                                    </div>
+                                                </th>
+                                                <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-17o4j18"
+                                                    scope="col">
+                                                    <div class="MuiBox-root css-dvxtzn">
+                                                        <p
+                                                            class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-1nbgxxl">
+                                                            Jugador</p>
+                                                        <p
+                                                            class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-1hkx1m5">
+                                                        </p>
+                                                    </div>
+                                                </th>
+                                                <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-17o4j18"
+                                                    scope="col">
+                                                    <div class="MuiBox-root css-dvxtzn">
+                                                        <p
+                                                            class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-1nbgxxl">
+                                                            Planillero</p>
+                                                        <p
+                                                            class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-1hkx1m5">
+                                                        </p>
+                                                    </div>
+                                                </th>
+                                                <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-17o4j18"
+                                                    scope="col">
+                                                    <div class="MuiBox-root css-dvxtzn">
+                                                        <p
+                                                            class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-1nbgxxl">
+                                                            Organizador</p>
+                                                        <p
+                                                            class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-1hkx1m5">
+                                                        </p>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="MuiTableBody-root css-1knzktt">
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Ver
+                                                        tabla de posiciones</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Ver
+                                                        tabla de goleadores</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Ver
+                                                        fixture</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Ver
+                                                        sancionados</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Cargar
+                                                        partido</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Crear
+                                                        fixture</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Crear
+                                                        equipo</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Invitar
+                                                        jugador</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Editar
+                                                        jugador</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">Editar
+                                                        equipo</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">
+                                                        Actualizar sancionados</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">
+                                                        Estadísticas del equipo</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">
+                                                        Palmarés del equipo</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-8iz2ds">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1g2gjnv">
+                                                    <p class="MuiTypography-root MuiTypography-body1 css-75ly46">
+                                                        Estadísticas del jugador</p>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter MuiTableCell-sizeMedium css-1xvb0zc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-rpkmlr"
+                                                            skin="light" color="error"><span></span></div>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                    <div class="MuiBox-root css-1l4w6pd">
+                                                        <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-xfwi9e"
+                                                            skin="light" color="primary"><span></span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="MuiTableRow-root css-hd61sp">
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                </td>
+                                                <td
+                                                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-tf2vzc">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiBox-root css-me547p" id="footer">
+                    <div class="MuiBox-root css-e2ezjl">
+                        <div class="MuiContainer-root MuiContainer-maxWidthLg css-1yli3h5">
+                            <div class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorSecondary MuiChip-filledSecondary MuiChip-rounded MuiChip-light css-17cnwlz"
+                                skin="light"><span class="MuiChip-label MuiChip-labelSmall css-kdju3t">Contacto</span>
+                            </div>
+                            <h1 class="MuiTypography-root MuiTypography-h1 css-1ut51sp">¿Aún tienes dudas?</h1>
+                            <h6 class="MuiTypography-root MuiTypography-subtitle1 css-1bnyl2j">Si tienes preguntas
+                                puedes enviarnos un mensaje a nuestro correo electrónico</h6>
+                            <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-6 css-h2qpui">
+                                <div
+                                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-15j76c0">
+                                    <div class="MuiBox-root css-d2xozw">
+                                        <div class="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault css-1ofe3xw"
+                                            color="secondary" skin="light"><span></span></div><a
+                                            class="MuiTypography-root MuiTypography-h4 css-1it3vji"
+                                            href="/">contacto.futapp@gmail.com</a>
+                                        <p class="MuiTypography-root MuiTypography-body1 css-q5w8iu">Te responderemos lo
+                                            antes posible</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root css-yz603d">
+                                <div class="MuiBox-root css-gmuwbf">
+                                    <div class="MuiBox-root css-1dnzbhn"><img alt="futapp logo"
+                                            src="/images/logos/app-logo-white.png" class="css-1fzkik5" /></div>
+                                    <p class="MuiTypography-root MuiTypography-body2 css-4z2puh">©</p>
+                                    <p class="MuiTypography-root MuiTypography-body2 css-14udaco">2024</p>
+                                </div>
+                                <div class="MuiBox-root css-pylaja"><a href="/">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1ng2hl1">Privacy</p>
+                                    </a><a href="/">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1ng2hl1">Terms</p>
+                                    </a><a href="/">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1ng2hl1">Contact</p>
+                                    </a><a href="/">
+                                        <p class="MuiTypography-root MuiTypography-body1 css-1ng2hl1">About Us</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="MuiBox-root css-1691ln4">
+            <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none">
+            </div>
+        </div>
+    </div>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"U0KUia2WaoTq-ZyOTbFtY","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
+</body>
+
+</html>
